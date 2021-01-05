@@ -5,6 +5,8 @@
     <title>Hello World</title>
 </head>
 <body>
-    {{ time|date:"Y-m-d" }}
+    {% for i in views_list %}
+    {{ i }}
+    {% endfor %}
 </body>
 </html>
