@@ -13,4 +13,8 @@ urlpatterns = [
     path('six', views.six),
     path('seven', views.seven),
     path('eight', views.eight),
+    path('nine', views.nine),
+    path('ten', views.ten),
+    path('elven', views.elven),
+    path('twelve', views.twelve),
 ]

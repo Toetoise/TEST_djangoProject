@@ -57,6 +57,28 @@ def seven(request):
 
 def eight(request):
     # 遍历字典
-    views_dict = {"name": "菜鸟教程", "age":18}
+    views_dict = {"name": "菜鸟教程", "age": 18}
     return render(request, "eight.html", {"views_dict": views_dict})
+
+
+def nine(request):
+    # 循环获取序号
+    views_list = ["a", "b", "c", "d", "e", "g"]
+    return render(request, "nine.html", {"listvar": views_list})
+
+
+def ten(request):
+    views_list = []
+    return render(request, "ten.html", {"listvar": views_list})
+
+
+def elven(request):
+    views_list = []
+    return render(request, "elven.html", {"listvar": views_list})
+
+
+def twelve(request):
+    # 引入文件
+    name = "学习开发"
+    return render(request, "twelve.html", {"name": name})
 # Create your views here.
